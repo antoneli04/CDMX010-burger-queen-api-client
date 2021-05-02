@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .navbar span {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar img {
+    width: 40px;
+  }
+
+  .navbar img:hover {
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    box-shadow: 0px 0px 7px white inset;
+  }
+  .nav-content {
+    height: 10vh;
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    background-color: #05222c;
+    padding: 15px;
+  }
+}
