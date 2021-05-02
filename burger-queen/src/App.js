@@ -10,7 +10,6 @@ function App() {
       <div className="secundario">
         <Switch>
           <Route exact path="/">
-            {" "}
             {<Login />}
           </Route>
         </Switch>

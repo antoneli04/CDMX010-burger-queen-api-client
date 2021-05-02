@@ -10,6 +10,8 @@ export function Login() {
       </div>
       <div className="contentLogin">
         <h2>Iniciar Sesión</h2>
+        <br />
+        <br />
         <input className="sesion one" type="text" placeholder="Correo"></input>
         <br />
         <input
