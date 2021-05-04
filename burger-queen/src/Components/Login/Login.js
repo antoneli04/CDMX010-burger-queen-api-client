@@ -1,8 +1,15 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "../Login/Login.css";
 import logo from "../../Assets/logo-queen.png";
 
 export function Login() {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/ordenes");
+  }
+
   return (
     <div className="contentGeneral">
       <div className="contentLogo">
@@ -20,7 +27,9 @@ export function Login() {
           placeholder="Contraseña"
         ></input>
         <br />
-        <button className="sesion three">Entrar</button>
+        <button onClick={handleClick} className="sesion three">
+          Entrar
+        </button>
         <br />
       </div>
     </div>

@@ -1,21 +1,29 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Routter from "./Components/route/Route";
 import "./App.css";
 import { Login } from "./Components/Login/Login";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 
-function App() {
+function Log() {
   return (
-    <div className="principal">
-      <div className="secundario">
+    <Fragment>
+      <div>
         <Switch>
           <Route exact path="/">
-            {<Login />}
+            <Login />
           </Route>
         </Switch>
       </div>
-      <div className="terciario"> {<Routter />}</div>
-    </div>
+    </Fragment>
+  );
+}
+
+function App() {
+  return (
+    <Fragment>
+      <Log />
+      <Routter />
+    </Fragment>
   );
 }
 
