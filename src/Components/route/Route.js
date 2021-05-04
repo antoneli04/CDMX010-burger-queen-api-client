@@ -85,6 +85,7 @@ function Ordenes() {
     <div>
       <h2>Ordenes</h2>
       <Card />
+      <Card />
       <Navbar />
     </div>
   );
