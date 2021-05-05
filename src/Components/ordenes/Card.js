@@ -1,16 +1,16 @@
 import React from "react";
-import cafe from "../../Assets/cafe.png";
 import "./ordenes.css";
 
-const Card = () => {
+const Card = (props) => {
+
   return (
     <div>
       <button className="cafe">
-        <img src={cafe} alt="cafe" />
+        <img src={props.imagen} alt={props.title} />
         <br />
-        <span>Café Americano</span>
+        <span>{props.title}</span>
         <br />
-        <span> $5 </span>
+        <span> $ {props.price} </span>
       </button>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Adm from "../../Assets/admin.png";
 import Inventario from "../../Assets/stock.png";
@@ -81,11 +81,34 @@ function Routter() {
 }
 
 function Ordenes() {
+
+  const [product, setProduct] = useState([]);
+
+  console.log(product, "product");
+
+  useEffect(() => {
+    console.log('useEffect');
+    getProduct()
+  }, [])
+  
+  const getProduct = async () => {
+    const data = await fetch('http://localhost:5000/desayuno')
+    const products = await data.json();
+    console.log(products);
+    setProduct(products);
+  }
+
+
   return (
     <div>
       <h2>Ordenes</h2>
-      <Card />
-      <Card />
+      <div className="desayuno">
+      {
+      product.map(p => (
+        <Card key={p.id} imagen={p.image} title={p.name} price={p.price}/>
+      ))
+      }
+      </div>
       <Navbar />
     </div>
   );
