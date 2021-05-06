@@ -22,7 +22,7 @@
             "id": 3,
             "name": "Sandwich de jamón y queso",
             "price": 10,
-            "image":"https://github.com/RaquelCFlores/CDMX010-burger-queen-api-client/blob/master/src/Assets/sandwich.png",
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/sandwich.png",
             "type": "string",
             "dateEntry":"date"
 
