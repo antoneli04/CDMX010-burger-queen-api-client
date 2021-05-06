@@ -1,0 +1,113 @@
+{
+    "desayuno":[
+        {
+            "id": 1,
+            "name": "Café Americano",
+            "price": 5,
+            "image": "https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/cafe.png",
+            "type":"string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 2,
+            "name": "Café con leche",
+            "price": 7,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/leche.png",
+            "type":"string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 3,
+            "name": "Sandwich de jamón y queso",
+            "price": 10,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/sandwich.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 4,
+            "name": "Jugo de frutas natural",
+            "price": 7,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/jugo.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        }
+    ],
+    "comida": [
+        {
+            "id": 5,
+            "name":"Hamburguesa simple",
+            "price":10,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/simple.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 6,
+            "name":"Hamburguesa doble",
+            "price":15,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/doble.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 7,
+            "name":"Papas fritas",
+            "price":5,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/papas.png",
+            "type": "string",
+            "dateEntry": "date"
+
+        },
+        {
+            "id": 8,
+            "name":"Aros de cebolla",
+            "price":5,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/aros.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 9,
+            "name":"Agua 500ml",
+            "price":5,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/agua1.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 10,
+            "name":"Agua 750ml",
+            "price":7,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/agua2.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 11,
+            "name":"Bebida / gaseosa 500ml",
+            "price":7,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/gaseosa.png",
+            "type": "string",
+            "dateEntry":"date"
+
+        },
+        {
+            "id": 12,
+            "name":"Bebida / gaseosa 750ml",
+            "price":10,
+            "image":"https://raw.githubusercontent.com/RaquelCFlores/CDMX010-burger-queen-api-client/master/src/Assets/gaseosa2.png",
+            "type": "string",
+            "dateEntry":"date"
+        }
+    ]
+}
