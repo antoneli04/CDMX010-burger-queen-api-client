@@ -9,7 +9,7 @@ function Log() {
     <Fragment>
       <div>
         <Switch>
-          <Route exact path="/">
+          <Route exact={true} path="/">
             <Login />
           </Route>
         </Switch>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Adm from "../../Assets/admin.png";
 import Inventario from "../../Assets/stock.png";
@@ -6,7 +6,11 @@ import Entregar from "../../Assets/entregar.png";
 import Cook from "../../Assets/cocina.png";
 import Menus from "../../Assets/menus.png";
 import "../route/route.css";
+import "./../ordenes/ordenes.css";
 import Card from "../ordenes/Card";
+import ButtonMenu from "../ordenes/ButtonMenu";
+import Comanda from "./../ordenes/Comanda";
+import { Contexto } from "./../../contextos/Contexto";
 
 const Navbar = () => {
   return (
@@ -81,36 +85,50 @@ function Routter() {
 }
 
 function Ordenes() {
+  const { tema } = useContext(Contexto);
+  console.log(tema.titulo);
 
   const [product, setProduct] = useState([]);
 
   console.log(product, "product");
 
   useEffect(() => {
-    console.log('useEffect');
-    getProduct()
-  }, [])
-  
+    console.log("useEffect");
+    getProduct();
+  }, []);
+
   const getProduct = async () => {
-    const data = await fetch('http://localhost:5000/desayuno')
+    const data = await fetch("http://localhost:5000/desayuno");
     const products = await data.json();
     console.log(products);
     setProduct(products);
-  }
-
+  };
 
   return (
-    <div>
-      <h2>Ordenes</h2>
-      <div className="desayuno">
-      {
-      product.map(p => (
-        <Card key={p.id} imagen={p.image} title={p.name} price={p.price}/>
-      ))
-      }
+    <>
+      <div className="contenedor_padre_ordenes">
+        <div className="contenedor_tarjetas">
+          <div className="contenedor-menu">
+            <ButtonMenu menu="Desayuno" />
+            <ButtonMenu menu="Almuerzo/Cena" />
+          </div>
+          <div className="desayuno">
+            {product.map((p) => (
+              <Card
+                key={p.id}
+                imagen={p.image}
+                title={p.name}
+                price={p.price}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="comanda">
+          <Comanda />
+        </div>
       </div>
       <Navbar />
-    </div>
+    </>
   );
 }
 
