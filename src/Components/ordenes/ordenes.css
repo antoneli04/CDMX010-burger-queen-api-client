@@ -21,3 +21,126 @@
   width: 100px;
   height: 100px;
 }
+
+.boton-menu {
+  background-color: #05222c;
+  color: white;
+  width: 25vw;
+  height: 10vh;
+  font-size: 24px;
+  font-family: "Piedra";
+  box-shadow: 0px 0px 15px black;
+}
+
+.boton-menu:hover {
+  background: rgba(5, 34, 44, 0.7);
+  border: 5px solid #05222c;
+}
+
+.contenedor_padre_ordenes {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  font-family: "Piedra";
+}
+
+.desayuno {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.contenedor_tarjetas {
+  width: 50vw;
+}
+.contenedor-menu {
+  display: flex;
+  width: 50vw;
+}
+
+.contenedor_padre_comanda {
+  display: flex;
+  flex-direction: column;
+}
+
+.comanda {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.contenedor_comanda_uno {
+  width: 45vw;
+  height: 15vh;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.contenedor_input_comanda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_comanda {
+  width: 150px;
+}
+
+.input_comanda {
+  width: 310px;
+  height: 39px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  border-bottom: 3px solid black;
+}
+
+.input_comanda::placeholder {
+  font-family: "Piedra";
+}
+
+.contenedor_comanda_dos {
+  padding-top: 30px;
+  font-size: 18px;
+  width: 45vw;
+  height: 53vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 200%;
+}
+
+.contenedor_boton_comanda {
+  width: 45vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton_comanda {
+  width: 260px;
+  height: 55px;
+  background-color: #efba1a;
+  font-size: 18px;
+  border-radius: 35px;
+  outline: none;
+  font-family: "Piedra";
+  border: 3px solid black;
+}
+
+.boton_comanda:hover {
+  background-color: #05222c;
+  color: white;
+}
+
+.titulo_comanda {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: rgb(218, 216, 216);
+  /* text-shadow: 5px 0px 5px black; */
+  -webkit-text-stroke: 0.8px black;
+}

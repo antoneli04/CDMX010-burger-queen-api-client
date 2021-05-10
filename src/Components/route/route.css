@@ -37,10 +37,4 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
-  .desayuno{
-    width:50vw;
-    display:flex;
-    flex-wrap: wrap;
-  }
 }
