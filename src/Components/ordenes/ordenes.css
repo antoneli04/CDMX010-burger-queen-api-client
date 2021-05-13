@@ -49,18 +49,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  position: fixed;
-  padding-top: 75px;
 }
-
 .contenedor_tarjetas {
   width: 50vw;
 }
-
 .contenedor-menu {
   display: flex;
   width: 50vw;
-  position: fixed;
 }
 
 .contenedor_padre_comanda {
@@ -78,11 +73,10 @@
 
 .contenedor_comanda_uno {
   width: 45vw;
-  height: 13vh;
+  height: 15vh;
   display: flex;
+
   flex-wrap: wrap;
-  
-  
 }
 .contenedor_input_comanda {
   display: flex;
@@ -97,7 +91,7 @@
 .input_comanda {
   width: 310px;
   height: 39px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
   font-size: 18px;
   outline: none;
   border: 0;
@@ -109,20 +103,13 @@
 }
 
 .contenedor_comanda_dos {
-  /* padding-top: 30px; */
+  padding-top: 30px;
   font-size: 18px;
   width: 45vw;
-  height: 60vh;
+  height: 53vh;
   display: flex;
-  flex-direction: column; 
-
-}
-
-.pedido{
-  overflow-x:hidden;
-  height: 290px;
+  flex-direction: column;
   line-height: 200%;
-  margin-bottom: 10px;
 }
 
 .contenedor_boton_comanda {
@@ -150,30 +137,10 @@
 }
 
 .titulo_comanda {
-  text-align: left;
+  text-align: center;
   font-size: 28px;
   letter-spacing: 3px;
   color: rgb(218, 216, 216);
   /* text-shadow: 5px 0px 5px black; */
   -webkit-text-stroke: 0.8px black;
-  padding-bottom: 5px;
-
-}
-
-.container_product{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4px;
-}
-
-.price_eliminar{
-  width: 100px;
-  display:flex;
-  justify-content: space-between;
-  
-}
-
-.resumen_pedido{
-  color:#05222c;
-  height: 55vh;
 }

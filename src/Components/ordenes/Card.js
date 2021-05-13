@@ -5,7 +5,7 @@ const Card = (props) => {
 
   return (
     <div>
-      <button className="cafe" onClick={()=>{(props.handleAddItem(props.p))}}>
+      <button className="cafe">
         <img src={props.imagen} alt={props.title} />
         <br />
         <span>{props.title}</span>
