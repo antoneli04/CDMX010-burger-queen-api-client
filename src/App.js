@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 import "./App.css";
 import { Login } from "./Components/Login/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -6,6 +6,14 @@ import Navbar from "./Components/Navbar/Navbar"
 import Ordenes from "./Components/ordenes/Ordenes"
 
 function App() {
+
+  const [order, setOrder] =useState({
+    client:"",
+    items:[],
+    total:0,
+    status:"pending",
+  });
+
   return (
     <Router>
       {/* <div> */}
@@ -14,7 +22,7 @@ function App() {
             <Stock />
           </Route>
           <Route path="/ordenes">
-            <Ordenes />
+            <Ordenes  setOrder={setOrder} order={order}/>
           </Route>
           <Route path="/cocina">
             <Cocina />
