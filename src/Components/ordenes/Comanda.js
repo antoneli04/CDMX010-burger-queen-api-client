@@ -1,7 +1,9 @@
 import React from "react";
 import logo from "./../../Assets/logo-queen.png";
+import Product from './Product';
 
-const Comanda = () => {
+const Comanda = ({order, borrarProduct}) => {
+  console.log(order)
   return (
     <div className="contenedor_padre_comanda">
       <div className="contenedor_comanda_uno">
@@ -18,7 +20,12 @@ const Comanda = () => {
       <div className="contenedor_comanda_dos">
         <h3 className="titulo_comanda">Resumen del pedido</h3>
         <div className="resumen_pedido">
-          <p>1 Cafe americano </p>
+          <p>Nombre del cliente:</p>
+          <p>Mesa No.</p>
+          <p>Orden:</p>
+          <div className="pedido">
+          {order.items.map((item, index) => <Product key={index} item={item} borrarProduct={borrarProduct}/>)}
+          </div>
           <h3>Total: $</h3>
         </div>
       </div>
